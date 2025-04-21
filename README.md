@@ -33,5 +33,8 @@ Estate-Agentic-AI (will be renamed) is an intelligent real estate assistant desi
 3. Use the dashboard to search for properties, get recommendations, or manage listings.
 
 ## Contact
-For questions or support, please contact [thekeyspammers@gmail.com].
+For questions or support, please contact thekeyspammers@gmail.com.
+
+## Important
+This is currently being built as part of the Dubai AI Week Hackathon: Agentic AI.
 
