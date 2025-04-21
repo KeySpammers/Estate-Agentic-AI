@@ -42,7 +42,7 @@ For questions or support, please contact thekeyspammers@gmail.com.
 
 - Anita Leo \
   **LinkedIn**: https://www.linkedin.com/in/anita-sandria-leo/ \
-  **GitHub**: https://github.com/ \
+  **GitHub**: https://github.com/anitaasl20 \
   **Email**: aniuae83@gmail.com
 
 - Hadiyya Mattumathodi \
@@ -57,7 +57,7 @@ For questions or support, please contact thekeyspammers@gmail.com.
 
 - Maxine Herrera \
   **LinkedIn**: https://www.linkedin.com/in/maxine-herrera-7702092a7/ \
-  **GitHub**: https://github.com/ \
+  **GitHub**: https://github.com/MaxineHer \
   **Email**: maxine.herrera@gmail.com
 
 - Nuraiman Hisham \
@@ -67,7 +67,7 @@ For questions or support, please contact thekeyspammers@gmail.com.
 
 - Sivaja Syam \
   **LinkedIn**: https://www.linkedin.com/in/sivaja-syam-7707b8251/ \
-  **GitHub**: https://github.com/ \
+  **GitHub**: https://github.com/sivzz-27 \
   **Email**: sivajasyam@gmail.com
 
 
