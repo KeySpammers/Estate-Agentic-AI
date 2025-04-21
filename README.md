@@ -9,6 +9,9 @@ Estate-Agentic-AI (will be renamed) is an intelligent real estate assistant desi
 - Integration with third-party real estate platforms.
 - User-friendly dashboard for agents and clients.
 
+## Important
+This is currently being built as part of the Dubai AI Week Hackathon: Agentic AI.
+
 ## Installation
 1. Clone the repository:
    ```bash
@@ -35,6 +38,38 @@ Estate-Agentic-AI (will be renamed) is an intelligent real estate assistant desi
 ## Contact
 For questions or support, please contact thekeyspammers@gmail.com.
 
-## Important
-This is currently being built as part of the Dubai AI Week Hackathon: Agentic AI.
+## The Team
+
+- Anita Leo \
+  **LinkedIn**: https://www.linkedin.com/in/anita-sandria-leo/ \
+  **GitHub**: https://github.com/ \
+  **Email**: aniuae83@gmail.com
+
+- Hadiyya Mattumathodi \
+  **LinkedIn**: https://www.linkedin.com/in/hadiyya-s-mattummathodi-b345831a9 \
+  **GitHub**: https://github.com/HadiyyaMattummathodi \
+  **Email**: hadiyyasakkir@gmail.com
+
+- Mariah Khalifa \
+  **LinkedIn**: https://www.linkedin.com/in/mariah-khalifa \
+  **GitHub**: https://github.com/Mariah0-0 \
+  **Email**: mariahkhalifa05@gmail.com
+
+- Maxine Herrera \
+  **LinkedIn**: https://www.linkedin.com/in/maxine-herrera-7702092a7/ \
+  **GitHub**: https://github.com/ \
+  **Email**: maxine.herrera@gmail.com
+
+- Nuraiman Hisham \
+  **LinkedIn**: https://www.linkedin.com/in/nuraiman-hisham-266022253 \
+  **GitHub**: https://github.com/nuramnz \
+  **Email**: nuraiman.h03@gmail.com
+
+- Sivaja Syam \
+  **LinkedIn**: https://www.linkedin.com/in/sivaja-syam-7707b8251/ \
+  **GitHub**: https://github.com/ \
+  **Email**: sivajasyam@gmail.com
+
+
+
 
