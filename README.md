@@ -46,7 +46,7 @@ For questions or support, please contact thekeyspammers@gmail.com.
   **Email**: aniuae83@gmail.com
 
 - Hadiyya Mattumathodi \
-  **LinkedIn**: https://www.linkedin.com/in/hadiyya-s-mattummathodi-b345831a9 \
+  **LinkedIn**: https://www.linkedin.com/in/hadiyya-s-mattummathodi-profile \
   **GitHub**: https://github.com/HadiyyaMattummathodi \
   **Email**: hadiyyasakkir@gmail.com
 
