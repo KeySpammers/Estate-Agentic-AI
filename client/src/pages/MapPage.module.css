@@ -1,0 +1,6 @@
+.mapPage h1 {
+  position: relative;
+  z-index: 10;
+  margin: -7rem 0 0 3rem;
+  color: #fff;
+}

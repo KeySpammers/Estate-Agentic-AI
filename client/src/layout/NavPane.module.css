@@ -1,0 +1,52 @@
+.navPane {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 2rem 2rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* .navPane.mapPage {
+  padding: 1rem 2rem 8rem 2rem;
+} */
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.navLink:hover {
+  color: black;
+}
+
+.profileImage {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
