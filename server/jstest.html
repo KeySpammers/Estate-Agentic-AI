@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Request with Fetch</title>
+</head>
+<body>
+    <div id="response3"></div>
+    <div id="response"></div>
+    <div id="response2"></div>
+    <script>
+        const url = 'http://127.0.0.1:8000/predict'; // Replace if needed
+
+        const data = {'type': 'Apartment', 
+                                                  'no_bedrooms': 7, 
+                                                  'no_bathrooms': 8, 
+                                                  'area': 2700, 
+                                                  'latitude': 25.197200775146484, 
+                                                  'longitude': 55.27439880371094, 
+                                                  'p2024': 14000000, 
+                                                  'p2023': 13800000, 
+                                                  'p2022': 13600000, 
+                                                  'p2021': 13400000, 
+                                                  'p2020': 13200000, 
+                                                  'p2019': 13000000, 
+                                                  'p2018': 12800000, 
+                                                  'p2017': 12600000, 
+                                                  'p2016': 12400000, 
+                                                  'p2015': 12200000, 
+                                                  'neighborhood': 'Downtown Dubai'};
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(responseData => {
+            console.log('Success:', responseData);
+            document.getElementById('response').textContent = JSON.stringify(responseData, null, 2); // Pretty print
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('response').textContent = `Error: ${error}`;
+        });
+    </script>
+
+<script>
+    const url2 = 'http://127.0.0.1:8000/getall'; // Replace if needed
+
+    fetch(url2, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response2.status}`);
+        }
+        return response.json();
+    })
+    .then(responseData => {
+        console.log('Success:', responseData);
+        document.getElementById('response2').textContent = JSON.stringify(responseData, null, 2); // Pretty print
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('response2').textContent = `Error: ${error}`;
+    });
+</script>
+
+<script>
+    const query = "analyze where to invest in real estate in dubai";
+const url3 = `http://127.0.0.1:8000/query?query=${encodeURIComponent(query)}`;
+
+fetch(url3, {
+  method: 'POST',
+  headers: {
+    'accept': 'application/json',
+  },
+  body: '',
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response3.status}`);
+  }
+  return response.json();
+})
+.then(responseData => {
+        console.log('Success:', responseData);
+        document.getElementById('response3').textContent = JSON.stringify(responseData, null, 2);;
+  // Handle the response data here
+})
+.catch(error => {
+    console.error('Error:', error);
+    document.getElementById('response3').textContent = `Error: ${error}`;
+  // Handle errors here
+});
+</script>
+</body>
+</html>
