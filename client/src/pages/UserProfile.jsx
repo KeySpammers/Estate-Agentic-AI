@@ -1,9 +1,9 @@
 import React from "react";
 import "./UserProfile.css";
-import Header from "./Header";
-import profilePic from "./Images/user.png";
-import propertyImg from "./Images/dubai.jpg";
-import ChatBot from "./ChatBot";
+import Header from "../layout/Header";
+import profilePic from "../Images/user.png";
+import propertyImg from "../Images/dubai.jpg";
+import ChatBot from "../components/ChatBot";
 import {
   FaMapMarkerAlt,
   FaRulerCombined,
@@ -84,7 +84,7 @@ const UserProfile = () => {
 
   return (
     <div className="user-profile-page">
-      <Header />
+      <Header map={true} />
       <ChatBot />
 
       <div className="top-section">

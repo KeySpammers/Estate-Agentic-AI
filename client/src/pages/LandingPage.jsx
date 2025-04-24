@@ -1,7 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
-import Header from "./Header";
-import dubaiBg from "./Images/dubai.jpg"; // Import the image
+import Header from "../layout/Header";
+import dubaiBg from "../Images/dubai.jpg"; // Import the image
 
 const Landing = () => {
   return (

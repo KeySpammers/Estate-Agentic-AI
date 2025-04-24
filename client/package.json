@@ -12,8 +12,8 @@
   "dependencies": {
     "@turf/turf": "^7.2.0",
     "leaflet": "^1.9.4",
-    "papaparse": "^5.5.2",
     "lucide-react": "^0.503.0",
+    "papaparse": "^5.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
