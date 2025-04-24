@@ -1,0 +1,215 @@
+.user-profile-page {
+  padding: 24px;
+  font-family: "Segoe UI", sans-serif;
+  background: #eef2f5;
+  color: #333;
+}
+
+/* Top section */
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+/* User info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.user-text h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #222;
+}
+
+.user-role {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.user-detail {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Insights */
+.insights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.insight-card {
+  background: #fff;
+  padding: 28px 36px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e4e8;
+  min-width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.insight-card h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #4d0085;
+}
+
+.insight-card p {
+  margin: 0;
+  font-size: 1.45rem;
+  color: #222;
+}
+
+.insight-card:hover {
+  background-color: #f0f4f8;
+  transform: translateY(-4px);
+}
+
+/* Properties list container */
+.properties-list {
+  margin-top: 40px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Properties header */
+.properties-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.properties-header h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #4d0085;
+  font-weight: 600;
+}
+
+/* Actions */
+.properties-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.add-button,
+.edit-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: #fff;
+}
+.add-button:hover {
+  background-color: #218838;
+}
+
+.edit-button {
+  background-color: #4d0085;
+  color: #fff;
+}
+.edit-button:hover {
+  background-color: #003d99;
+}
+
+.action-icon {
+  font-size: 1rem;
+}
+
+/* Property cards grid */
+.property-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+/* Property card */
+.property-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  min-height: 240px;
+}
+
+.property-card:hover {
+  transform: scale(1.02);
+}
+
+.property-img-horizontal {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-details-horizontal {
+  padding: 20px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.property-details-horizontal h4 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  color: #4d0085;
+}
+
+.property-details-horizontal p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.property-details-horizontal strong {
+  color: #333;
+}
+
+/* ROI color classes */
+.roi-high {
+  color: #27ae60;
+}
+.roi-medium {
+  color: #e67e22;
+}
+.roi-low {
+  color: #c0392b;
+}
