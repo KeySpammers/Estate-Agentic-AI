@@ -2,7 +2,6 @@ import React from "react";
 import "./UserProfile.css";
 import Header from "./Header";
 import profilePic from "./Images/user.png";
-import propertyImg from "./Images/dubai.jpg";
 import ChatBot from "./ChatBot";
 import {
   FaMapMarkerAlt,
@@ -13,8 +12,15 @@ import {
   FaEdit,
   FaPlus,
 } from "react-icons/fa";
+import p1 from "./Images/p1.jpg";
+import p2 from "./Images/p2.jpg";
+import p3 from "./Images/p3.jpg";
+import p4 from "./Images/p4.jpg";
+import p5 from "./Images/p5.jpg";
+import p6 from "./Images/p6.jpg";
 
 const UserProfile = () => {
+  const propertyImages = [p1, p2, p3, p4, p5, p6];
   const user = {
     name: "John Doe",
     role: "Real Estate Investor",
@@ -130,10 +136,11 @@ const UserProfile = () => {
           {properties.map((property, idx) => (
             <div key={idx} className="property-card">
               <img
-                src={propertyImg}
+                src={propertyImages[idx]}
                 alt={property.name}
                 className="property-img-horizontal"
               />
+
               <div className="property-details-horizontal">
                 <h4>{property.name}</h4>
                 <p>
