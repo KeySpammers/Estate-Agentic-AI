@@ -1,6 +1,6 @@
-# Estate-Agentic-AI
+# PropGauge
 
-Estate-Agentic-AI (will be renamed) is an intelligent real estate assistant designed to streamline property management, buying, and selling processes. It leverages AI to provide insights, recommendations, and automation for real estate professionals and clients.
+PropGauge is an intelligent real estate assistant designed to streamline property management, buying, and selling processes. It leverages AI to provide insights, recommendations, and automation for real estate professionals and clients.
 
 ## Features
 - AI-powered property recommendations.
@@ -15,7 +15,7 @@ This is currently being built as part of the Dubai AI Week Hackathon: Agentic AI
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Estate-Agentic-AI.git
+   git clone https://github.com/KeySpammers/Estate-Agentic-AI.git
    ```
 2. Navigate to the project directory:
    ```bash
