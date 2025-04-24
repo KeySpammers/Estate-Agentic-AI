@@ -46,7 +46,7 @@ const CustomCircleMarker = ({ property, selectedProperty, handleMarkerClick, get
       fillOpacity={0.8}
       color={isSelected ? "#000" : "#333"}
       fillColor={fillColor}
-      eventHandlers={{ 
+      eventHandlers={{
         click: (e) => handleMarkerClick(property, e),
       }}
       className={isSelected ? "selected-marker" : ""}
@@ -102,12 +102,12 @@ function DubaiAreas({ geoJsonData, mode, setSelectedArea, selectedArea }) {
     e.originalEvent.stopPropagation();
 
     const layer = e.target;
-    
+
     // Reset all layers to default style
     Object.values(layersRef.current).forEach(l => {
       safeSetStyle(l, defaultStyle);
     });
-    
+
     // Set selected style for clicked layer
     safeSetStyle(layer, selectedStyle);
     setSelectedArea(feature.properties);
@@ -123,11 +123,11 @@ function DubaiAreas({ geoJsonData, mode, setSelectedArea, selectedArea }) {
   const onEachFeature = (feature, layer) => {
     // Store layer reference
     layersRef.current[feature.properties.name] = layer;
-    
+
     // Set initial style
-    safeSetStyle(layer, 
-      selectedArea && feature.properties.name === selectedArea.name 
-        ? selectedStyle 
+    safeSetStyle(layer,
+      selectedArea && feature.properties.name === selectedArea.name
+        ? selectedStyle
         : defaultStyle
     );
 
@@ -143,11 +143,11 @@ function DubaiAreas({ geoJsonData, mode, setSelectedArea, selectedArea }) {
   // Update styles when selectedArea changes
   useEffect(() => {
     if (!geoJsonData) return;
-    
+
     Object.entries(layersRef.current).forEach(([name, layer]) => {
-      safeSetStyle(layer, 
-        selectedArea && name === selectedArea.name 
-          ? selectedStyle 
+      safeSetStyle(layer,
+        selectedArea && name === selectedArea.name
+          ? selectedStyle
           : defaultStyle
       );
     });
@@ -199,7 +199,7 @@ const Map = ({ csvUrl, geoJsonUrl }) => {
   // Get properties within a specific area
   const getPropertiesInArea = (areaFeature, properties) => {
     if (!areaFeature || !properties) return [];
-    
+
     try {
       const polygon = turf.polygon(areaFeature.geometry.coordinates);
       return properties.filter(property => {
@@ -215,16 +215,16 @@ const Map = ({ csvUrl, geoJsonUrl }) => {
   // Calculate area statistics
   const calculateAreaStats = (areaFeature) => {
     if (!areaFeature || !data) return null;
-    
+
     const propertiesInArea = getPropertiesInArea(areaFeature, data);
     if (propertiesInArea.length === 0) return null;
 
     // Calculate average price
     const avgPrice = propertiesInArea.reduce((sum, p) => sum + p.price, 0) / propertiesInArea.length;
-    
+
     // Calculate average price per sqft
     const avgPricePerSqft = propertiesInArea.reduce((sum, p) => sum + (p.price / p.size_sqft), 0) / propertiesInArea.length;
-    
+
     // Calculate price growth (if historical data exists)
     const growth = propertiesInArea.reduce((sum, p) => {
       const hasHistory = p['2025'] && p['2015'];
@@ -235,7 +235,7 @@ const Map = ({ csvUrl, geoJsonUrl }) => {
     const priceTrend = Array.from({ length: 12 }, (_, i) => {
       const year = (2015 + i).toString();
       const yearData = propertiesInArea.filter(p => p[year]);
-      const avg = yearData.length > 0 
+      const avg = yearData.length > 0
         ? yearData.reduce((sum, p) => sum + parseFloat(p[year]), 0) / yearData.length
         : null;
       return { year, price: avg };
@@ -315,7 +315,7 @@ const Map = ({ csvUrl, geoJsonUrl }) => {
   const handleMarkerClick = (property, e) => {
     if (mode !== 'property') return;
     e.originalEvent.stopPropagation();
-    
+
     // Toggle selection if clicking the same property
     if (selectedProperty && selectedProperty.name === property.name) {
       setSelectedProperty(null);
@@ -329,14 +329,14 @@ const Map = ({ csvUrl, geoJsonUrl }) => {
 
   const handleAreaClick = (area) => {
     if (!geoJsonData) return;
-    
+
     // Find the full area feature from geoJsonData
     const areaFeature = geoJsonData.features.find(f => f.properties.name === area.name);
     if (!areaFeature) return;
-    
+
     // Calculate statistics
     const stats = calculateAreaStats(areaFeature);
-    
+
     setSelectedArea({
       ...area,
       stats
@@ -364,7 +364,7 @@ const Map = ({ csvUrl, geoJsonUrl }) => {
 
   // Render Property Panel
   const renderPropertyPanel = () => (
-    <div 
+    <div
       className={`side-panel-alt ${panelVisible ? "visible" : ""}`}
       ref={panelRef}
     >

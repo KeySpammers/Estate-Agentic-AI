@@ -2,10 +2,12 @@ import React from "react";
 import "./LandingPage.css";
 import Header from "../layout/Header";
 import dubaiBg from "../Images/dubai.jpg"; // Import the image
+import ChatBot from "../components/ChatBot";
 
 const Landing = () => {
   return (
     <main>
+      <ChatBot />
       <div className="landing" style={{ backgroundImage: `url(${dubaiBg})` }}>
         <div className="overlay"></div>
         <Header transparent={true} />
