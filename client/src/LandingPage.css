@@ -1,0 +1,105 @@
+.landing {
+  font-family: "Segoe UI", sans-serif;
+  height: 100vh; /* force full screen */
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.landing > *:not(.overlay) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Let sections take up a portion of screen */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #4e54c8;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+.features {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+  background: transparent;
+  text-align: center;
+  align-items: center;
+}
+
+.feature {
+  background-color: #ffffffdd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+  width: 240px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+}
+
+.feature h2 {
+  font-size: 1.3rem;
+  color: #4e54c8;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  font-size: 0.8rem;
+  color: #eee;
+}
